@@ -1,0 +1,180 @@
+---
+title: "FAQ"
+description: "Frequently asked questions about Project Dune"
+icon: "circle-question"
+---
+
+## General
+
+<AccordionGroup>
+  <Accordion title="What is Project Dune?">
+    Project Dune is an Integrated Research Environment (IRE) that combines paper management, annotation, note-taking, and manuscript writing in one application. It's designed for researchers who want to streamline their workflow from reading papers to writing manuscripts.
+  </Accordion>
+
+  <Accordion title="Who is Project Dune for?">
+    - Graduate students (Masters, PhD)
+    - Academic researchers
+    - Anyone doing literature-based research
+    - Writers who need to manage citations
+  </Accordion>
+
+  <Accordion title="Is Project Dune free?">
+    Currently, Project Dune is in development/beta and free to use. Future pricing will be announced.
+  </Accordion>
+
+  <Accordion title="Where is my data stored?">
+    Currently, all data is stored locally in your browser's storage. This means:
+    - ✅ Your data stays on your device
+    - ✅ No account required
+    - ⚠️ Clearing browser data will erase your work
+    - ⚠️ Data doesn't sync across devices
+
+    Cloud sync is planned for a future release.
+  </Accordion>
+</AccordionGroup>
+
+## Papers & Library
+
+<AccordionGroup>
+  <Accordion title="What file formats can I import?">
+    Currently, Project Dune supports PDF files. Support for other formats (EPUB, web pages) is planned.
+  </Accordion>
+
+  <Accordion title="Can I sync with Zotero/Mendeley?">
+    Not yet, but Zotero sync is high on the roadmap. For now, you can export PDFs from Zotero and import them into Project Dune.
+  </Accordion>
+
+  <Accordion title="Why isn't metadata extracted correctly?">
+    Metadata extraction depends on the PDF structure. If automatic extraction fails:
+    1. Edit the metadata manually during import
+    2. Fill in title, authors, and year
+  </Accordion>
+
+  <Accordion title="Is there a limit to how many papers I can import?">
+    No hard limit, but browser storage has limits (typically 5-10GB). Large libraries may need cloud storage in the future.
+  </Accordion>
+</AccordionGroup>
+
+## Notes & Writing
+
+<AccordionGroup>
+  <Accordion title="What is bidirectional linking?">
+    When Note A links to Note B, Note B automatically shows a "backlink" to Note A. This creates a web of connected ideas without manual work.
+  </Accordion>
+
+  <Accordion title="How do I link to another note?">
+    Use double brackets: `[[Note Title]]`
+
+    As you type, an autocomplete will suggest matching notes.
+  </Accordion>
+
+  <Accordion title="Can I use LaTeX math?">
+    Yes! Use `$...$` for inline math and `$$...$$` for block equations:
+    - Inline: `$E = mc^2$`
+    - Block: `$$\sum_{i=1}^{n} x_i$$`
+  </Accordion>
+
+  <Accordion title="Is there auto-save?">
+    Changes are saved when you click the Save button. Automatic saving is planned for a future release.
+  </Accordion>
+
+  <Accordion title="Can I collaborate with others?">
+    Not yet. Real-time collaboration is on the roadmap for future development.
+  </Accordion>
+</AccordionGroup>
+
+## Citations & Export
+
+<AccordionGroup>
+  <Accordion title="How do I insert a citation?">
+    1. Click the **Cite** button in the drafts toolbar
+    2. Search for a paper from your library
+    3. Select the paper to insert the citation
+  </Accordion>
+
+  <Accordion title="What citation styles are supported?">
+    - APA 7th Edition
+    - MLA 9th Edition
+    - Chicago 17th Edition
+    - IEEE
+    - Harvard
+  </Accordion>
+
+  <Accordion title="Can I export to Overleaf?">
+    Yes! Export your manuscript as LaTeX (`.tex`), then import into Overleaf for final formatting.
+  </Accordion>
+
+  <Accordion title="Why are my citations not showing in export?">
+    Make sure:
+    1. Papers are imported in your Library
+    2. Citations use correct syntax
+    3. A citation style is selected in the export dialog
+  </Accordion>
+</AccordionGroup>
+
+## Technical
+
+<AccordionGroup>
+  <Accordion title="What browsers are supported?">
+    Dune works best in:
+    - Chrome (recommended)
+    - Firefox
+    - Safari
+    - Edge
+  </Accordion>
+
+  <Accordion title="Can I use Dune offline?">
+    Currently, Dune requires an internet connection. Offline mode is planned.
+  </Accordion>
+
+  <Accordion title="I lost my data. Can I recover it?">
+    If you cleared your browser data, the data cannot be recovered. We recommend:
+    - Regular exports as backup
+    - Don't clear browser data for this site
+  </Accordion>
+
+  <Accordion title="The PDF viewer is slow">
+    Large PDFs may load slowly. Try:
+    - Using Chrome for best performance
+    - Closing other tabs/applications
+    - Importing smaller PDFs if possible
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<Warning>
+**Pages won't load?**
+1. Clear browser cache (but not localStorage)
+2. Try a hard refresh (`Cmd/Ctrl + Shift + R`)
+3. Check your internet connection
+4. Try a different browser
+</Warning>
+
+<Note>
+**Reporting Issues:** Report bugs on GitHub Issues with steps to reproduce, browser info, and screenshots.
+</Note>
+
+## Feature Requests
+
+<Accordion title="What features are coming next?">
+  High priority items include:
+  - Zotero sync
+  - Version history
+  - Real export (not simulated)
+  - Cloud sync
+  - Collaboration
+
+  Check the roadmap for the full list.
+</Accordion>
+
+## Getting Help
+
+<CardGroup cols={2}>
+  <Card title="Documentation" icon="book" href="/">
+    Browse the full docs
+  </Card>
+  <Card title="Keyboard Shortcuts" icon="keyboard" href="/reference/shortcuts">
+    Speed up your workflow
+  </Card>
+</CardGroup>

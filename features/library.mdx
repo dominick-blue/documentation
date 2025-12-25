@@ -1,0 +1,194 @@
+---
+title: "Library & Papers"
+description: "Import, organize, and annotate your research papers"
+icon: "book"
+---
+
+The Library is where you collect, organize, and annotate your research papers.
+
+## Importing Papers
+
+### Drag and Drop
+
+The fastest way to import:
+
+1. Drag a PDF file onto the Library page
+2. Drop it in the import zone
+3. Review metadata and click **Import**
+
+### Import Button
+
+1. Click **Import Paper** in the top right
+2. Select a PDF from your file system
+3. Review and edit metadata if needed
+4. Click **Import**
+
+<Tip>
+Dune attempts to extract metadata automatically (title, authors, year, DOI). You can manually edit any field before importing.
+</Tip>
+
+## Library Views
+
+<Tabs>
+  <Tab title="Grid View">
+    Default view showing paper cards with:
+    - Thumbnail (first page preview)
+    - Title and authors
+    - Year
+    - Annotation count badge
+  </Tab>
+  <Tab title="List View">
+    Compact view for scanning many papers:
+    - One paper per row
+    - Sortable columns
+    - More papers visible at once
+  </Tab>
+</Tabs>
+
+Toggle between views using the view switcher in the toolbar.
+
+## Organizing Papers
+
+### Search
+
+Use the search bar to find papers by:
+- Title
+- Author name
+- Year
+- Keywords
+
+### Sorting
+
+Sort your library by:
+- **Date Added** — Most recent first
+- **Title** — Alphabetical
+- **Author** — By first author
+- **Year** — Publication year
+
+## Reading Papers
+
+Click any paper card to open the PDF viewer.
+
+### Viewer Layout
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  ← Back    Paper Title                    Zoom  Page   │
+├──────────┬──────────────────────────┬──────────────────┤
+│          │                          │                  │
+│ THUMBS   │      PDF CONTENT         │   ANNOTATIONS    │
+│          │                          │                  │
+│ Page 1   │  [Scrollable PDF view]   │   - Highlight 1  │
+│ Page 2   │                          │   - Highlight 2  │
+│ Page 3   │                          │   - Note 1       │
+│  ...     │                          │                  │
+└──────────┴──────────────────────────┴──────────────────┘
+```
+
+### Toolbar Controls
+
+| Control | Action |
+|---------|--------|
+| Zoom In (+) | Increase magnification |
+| Zoom Out (-) | Decrease magnification |
+| Fit Width | Scale to window width |
+| Fit Page | Show full page |
+| Page Input | Jump to specific page |
+
+## Creating Annotations
+
+### Highlighting Text
+
+<Steps>
+  <Step title="Select text">
+    Click and drag to select text in the PDF
+  </Step>
+  <Step title="Choose category">
+    A popover appears — select an annotation type
+  </Step>
+  <Step title="Add note (optional)">
+    Include your commentary or interpretation
+  </Step>
+  <Step title="Save">
+    Click Save Highlight to store the annotation
+  </Step>
+</Steps>
+
+### Annotation Categories
+
+| Category | Purpose | When to Use |
+|----------|---------|-------------|
+| **Key Claim** | Core findings | "The model achieves 95% accuracy" |
+| **Method** | Techniques | "We use a transformer architecture" |
+| **Critique** | Limitations | "Small sample size limits generalizability" |
+| **Definition** | Concepts | "Transfer learning refers to..." |
+| **Question** | Follow-ups | Things you want to investigate |
+
+<Note>
+Each category has an assigned color, making it easy to visually scan your annotations.
+</Note>
+
+## Managing Annotations
+
+### Annotation Sidebar
+
+All annotations for the current paper appear in the right sidebar:
+- Grouped by page or category
+- Click to jump to location in PDF
+- Edit or delete existing annotations
+
+### Filtering
+
+Filter annotations by category using the buttons at the top of the sidebar. Useful when reviewing specific aspects of a paper.
+
+### Exporting Annotations
+
+Export your annotations as Markdown:
+
+1. Click the **Export** button in the annotation sidebar
+2. Choose format (Markdown, plain text)
+3. Copy to clipboard or download
+
+Export format:
+
+```markdown
+## Paper Title
+
+### Key Claims
+- "Finding 1..." (p. 3)
+  - Your note about this claim
+
+### Methods
+- "The approach uses..." (p. 7)
+```
+
+## Tips & Best Practices
+
+<AccordionGroup>
+  <Accordion title="Annotation Strategy">
+    1. **First pass:** Highlight key claims and methods (skim)
+    2. **Second pass:** Add critiques and questions (deep read)
+    3. **Third pass:** Add notes connecting to other papers
+  </Accordion>
+  <Accordion title="Naming Conventions">
+    Use consistent paper naming for easy search:
+    - `Author2024_ShortTitle`
+    - Makes citation picker faster later
+  </Accordion>
+  <Accordion title="Regular Review">
+    Periodically review your annotations:
+    - Filter by "Question" to find follow-ups
+    - Export annotations to notes for synthesis
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Notes" icon="note-sticky" href="/features/notes">
+    Connect annotations to your notes
+  </Card>
+  <Card title="Drafts" icon="file-pen" href="/features/drafts">
+    Cite papers in your manuscripts
+  </Card>
+</CardGroup>

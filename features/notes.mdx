@@ -1,0 +1,243 @@
+---
+title: "Notes"
+description: "Create connected notes with bidirectional links"
+icon: "note-sticky"
+---
+
+Notes are where you synthesize ideas, connect concepts, and build your understanding across multiple papers.
+
+## Creating Notes
+
+1. Navigate to **Notes** in the sidebar
+2. Click **New** in the top right
+3. Enter a title for your note
+4. Start writing in the editor
+
+### Note Structure
+
+Notes use Markdown formatting with special syntax for linking:
+
+```markdown
+# My Research Notes
+
+## Key Insights
+
+This connects to [[Other Note Title]] and references @AuthorYear.
+
+- Bullet points work
+- As do numbered lists
+
+> Blockquotes for important passages
+```
+
+## The Notes Interface
+
+```
+┌──────────────────┬─────────────────────────────────────┐
+│                  │                                     │
+│   NOTE LIST      │          EDITOR                     │
+│                  │                                     │
+│ [Search...]      │  # Note Title                       │
+│                  │                                     │
+│ > Note 1         │  Your content here...               │
+│   Note 2         │                                     │
+│   Note 3         │  [[Links]] and @citations           │
+│                  │                                     │
+│ [+ New]          │  ─────────────────────────────      │
+│                  │  Backlinks: 3 notes, 2 papers       │
+└──────────────────┴─────────────────────────────────────┘
+```
+
+## Editor Modes
+
+<Tabs>
+  <Tab title="Edit">
+    Raw Markdown only — full control over formatting
+  </Tab>
+  <Tab title="Split">
+    Side-by-side Markdown and preview — best of both worlds
+  </Tab>
+  <Tab title="Preview">
+    Rendered output only — see how it will look
+  </Tab>
+</Tabs>
+
+## Linking Notes
+
+### Creating Links
+
+Use double brackets to link to another note:
+
+```markdown
+See my thoughts in [[Literature Review Notes]]
+```
+
+<Tip>
+When you type `[[`, an autocomplete popup shows matching notes.
+</Tip>
+
+### Backlinks
+
+When Note A links to Note B:
+- Note B shows "Note A" in its backlinks panel
+- Creates a bidirectional connection automatically
+
+**Use backlinks to:**
+- Discover unexpected connections
+- Navigate your knowledge graph
+- See which notes reference the current one
+
+### Referencing Papers
+
+Use `@` followed by the paper identifier:
+
+```markdown
+As demonstrated in @Smith2024, the results show...
+```
+
+## Organizing Notes
+
+### Tags
+
+Add tags to notes for organization:
+- Displayed in note header
+- Filter notes by tag in sidebar
+
+Example tags:
+- `literature-review`
+- `methods`
+- `key-findings`
+- `meeting-notes`
+
+### Naming Conventions
+
+Good note titles make linking easier:
+
+| Pattern | Example |
+|---------|---------|
+| Topic-based | "Attention Mechanisms Overview" |
+| Paper-based | "Notes on Smith2024" |
+| Date-based | "Meeting 2024-12-20" |
+| Question-based | "How does transfer learning work" |
+
+## Writing in Markdown
+
+### Basic Formatting
+
+```markdown
+**bold** and *italic*
+
+- Bullet list
+- Another item
+
+1. Numbered list
+2. Second item
+
+> Blockquote
+
+`inline code`
+```
+
+### Code Blocks
+
+````markdown
+```python
+def example():
+    return "Hello, research!"
+```
+````
+
+### Math (LaTeX)
+
+Inline math: `$E = mc^2$`
+
+Block math:
+
+```markdown
+$$
+\frac{\partial f}{\partial x} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+$$
+```
+
+### Task Lists
+
+```markdown
+- [x] Completed task
+- [ ] Pending task
+```
+
+## Note Templates
+
+<AccordionGroup>
+  <Accordion title="Literature Note Template">
+```markdown
+# Paper: [Title]
+
+**Authors:**
+**Year:**
+**DOI:**
+
+## Summary
+One paragraph summary of the paper.
+
+## Key Claims
+- Claim 1
+- Claim 2
+
+## Methods
+How did they do it?
+
+## Limitations
+What are the weaknesses?
+
+## Connections
+- Related to [[Other Note]]
+
+## Questions
+- [ ] Follow up on X
+```
+  </Accordion>
+  <Accordion title="Meeting Notes Template">
+```markdown
+# Meeting: [Date] - [Topic]
+
+**Attendees:**
+
+## Agenda
+1. Item 1
+2. Item 2
+
+## Discussion
+Key points from the meeting.
+
+## Action Items
+- [ ] Task 1
+- [ ] Task 2
+```
+  </Accordion>
+</AccordionGroup>
+
+## Tips & Best Practices
+
+<Note>
+**Atomic Notes:** Keep notes focused on one idea. Easier to link and reuse.
+</Note>
+
+<Tip>
+**Progressive Summarization:**
+1. First pass — Capture raw quotes
+2. Second pass — Bold key phrases
+3. Third pass — Summarize in your words
+4. Fourth pass — Connect to other notes
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Drafts" icon="file-pen" href="/features/drafts">
+    Turn notes into manuscripts
+  </Card>
+  <Card title="Markdown Guide" icon="text-size" href="/reference/markdown">
+    Full formatting reference
+  </Card>
+</CardGroup>

@@ -1,0 +1,226 @@
+---
+title: "Markdown Guide"
+description: "Complete reference for Markdown formatting in Dune"
+icon: "text-size"
+---
+
+## Basic Syntax
+
+### Headings
+
+```markdown
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+```
+
+### Emphasis
+
+```markdown
+*italic* or _italic_
+**bold** or __bold__
+***bold italic***
+~~strikethrough~~
+```
+
+### Paragraphs
+
+Separate paragraphs with a blank line:
+
+```markdown
+First paragraph.
+
+Second paragraph.
+```
+
+## Lists
+
+### Unordered Lists
+
+```markdown
+- Item 1
+- Item 2
+  - Nested item
+  - Another nested
+- Item 3
+```
+
+### Ordered Lists
+
+```markdown
+1. First item
+2. Second item
+   1. Nested numbered
+   2. Another nested
+3. Third item
+```
+
+### Task Lists
+
+```markdown
+- [x] Completed task
+- [ ] Incomplete task
+- [ ] Another task
+```
+
+## Links & Images
+
+### Links
+
+```markdown
+[Link text](https://example.com)
+[Link with title](https://example.com "Title")
+```
+
+### Images
+
+```markdown
+![Alt text](image-url.jpg)
+![Alt text](image-url.jpg "Optional title")
+```
+
+## Code
+
+### Inline Code
+
+```markdown
+Use `inline code` for short snippets.
+```
+
+### Code Blocks
+
+````markdown
+```python
+def hello():
+    print("Hello, world!")
+```
+
+```javascript
+const greeting = () => console.log("Hello!");
+```
+````
+
+<Tip>
+Supported languages include: python, javascript, typescript, java, c, cpp, rust, go, sql, bash, r, julia, latex, markdown, json, yaml, and more.
+</Tip>
+
+## Blockquotes
+
+```markdown
+> This is a blockquote.
+> It can span multiple lines.
+
+> Nested quotes:
+>> Second level
+>>> Third level
+```
+
+## Tables
+
+```markdown
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Cell 1   | Cell 2   | Cell 3   |
+| Cell 4   | Cell 5   | Cell 6   |
+```
+
+### Alignment
+
+```markdown
+| Left | Center | Right |
+|:-----|:------:|------:|
+| L    |   C    |     R |
+```
+
+## Horizontal Rules
+
+```markdown
+---
+```
+
+## Math (LaTeX)
+
+### Inline Math
+
+```markdown
+The equation $E = mc^2$ is famous.
+```
+
+### Block Math
+
+```markdown
+$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$
+```
+
+### Common Math Syntax
+
+| Syntax | Description |
+|--------|-------------|
+| `$x^2$` | Superscript |
+| `$x_i$` | Subscript |
+| `$\frac{a}{b}$` | Fraction |
+| `$\sqrt{x}$` | Square root |
+| `$\sum_{i=1}^{n}$` | Summation |
+| `$\int_a^b$` | Integral |
+| `$\alpha, \beta$` | Greek letters |
+| `$\rightarrow$` | Arrow |
+
+## Footnotes
+
+```markdown
+Here is a statement[^1].
+
+Another claim[^note].
+
+[^1]: This is the footnote.
+[^note]: Named footnotes work too.
+```
+
+## Dune-Specific Syntax
+
+### Note Links
+
+```markdown
+See [[Other Note Title]] for more.
+```
+
+### Paper Citations
+
+```markdown
+As shown by @AuthorYear, the results...
+```
+
+### Annotation References
+
+```markdown
+The key finding [[paper:Smith2024#annotation1]]...
+```
+
+## Escaping Characters
+
+Use backslash to escape special characters:
+
+```markdown
+\*not italic\*
+\# not a heading
+\[not a link\]
+```
+
+## Quick Reference
+
+| Element | Syntax |
+|---------|--------|
+| Bold | `**text**` |
+| Italic | `*text*` |
+| Code | `` `code` `` |
+| Link | `[text](url)` |
+| Image | `![alt](url)` |
+| Heading | `# H1` to `###### H6` |
+| List | `- item` or `1. item` |
+| Quote | `> text` |
+| Math | `$inline$` or `$$block$$` |
+| Note link | `[[Note Title]]` |
+| Citation | `@AuthorYear` |

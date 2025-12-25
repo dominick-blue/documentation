@@ -1,0 +1,241 @@
+---
+title: "Drafts & Writing"
+description: "Write manuscripts with integrated citations"
+icon: "file-pen"
+---
+
+Drafts is where you write manuscripts, papers, and documents with integrated citation support.
+
+## Creating a Draft
+
+1. Navigate to **Drafts** in the sidebar
+2. Click **New**
+3. Enter a title for your manuscript
+4. Start writing
+
+New drafts come with a basic structure:
+
+```markdown
+# Your Title
+
+## Abstract
+Write your abstract here...
+
+## 1. Introduction
+Start writing...
+```
+
+## The Drafts Interface
+
+```
+┌──────────────────┬─────────────────────────────────────┐
+│                  │  Title              [Cite] [Export] │
+│   DRAFT LIST     │  1,234 words  v1.0  APA             │
+│                  ├─────────────────────────────────────┤
+│ [Search...]      │                                     │
+│                  │  # Your Manuscript                  │
+│ > Draft 1        │                                     │
+│   Draft 2        │  Content with citations (Author,   │
+│                  │  2024) inline...                    │
+│ [+ New]          │                                     │
+└──────────────────┴─────────────────────────────────────┘
+```
+
+### Header Bar
+
+- **Title** — Current manuscript name
+- **Word count** — Live word/character count
+- **Version** — Current version number
+- **Citation style** — Active style (APA, MLA, etc.)
+- **Cite button** — Open citation picker
+- **Export button** — Export to various formats
+
+## Editor Modes
+
+<Tabs>
+  <Tab title="Edit">
+    Raw Markdown editing — fastest for keyboard-heavy users
+  </Tab>
+  <Tab title="Split (Default)">
+    Side-by-side Markdown and preview — best of both worlds
+  </Tab>
+  <Tab title="Preview">
+    Rendered output only — good for reviewing
+  </Tab>
+</Tabs>
+
+## Focus Mode
+
+For distraction-free writing:
+
+1. Click the **expand icon** in the toolbar
+2. Editor goes full-screen
+3. Minimal UI — just you and the words
+4. Click **Exit Focus** to return
+
+<Tip>
+Focus mode is great for first drafts. Exit to check formatting and preview.
+</Tip>
+
+## Citations
+
+### Opening the Citation Picker
+
+Three ways to insert a citation:
+
+1. Click the **Cite** button in the toolbar
+2. Type `@` and start typing a paper title
+3. Use keyboard shortcut (coming soon)
+
+### Citation Picker Dialog
+
+```
+┌─────────────────────────────────────────┐
+│  Insert Citation                        │
+├─────────────────────────────────────────┤
+│  Style: [APA] [MLA] [Chicago] [IEEE]    │
+│                                         │
+│  [Search papers...]                     │
+│                                         │
+│  Recent:                                │
+│  > Smith et al. 2024 - Deep Learning    │
+│  > Chen et al. 2023 - Attention         │
+└─────────────────────────────────────────┘
+```
+
+### Citation Styles
+
+| Style | Example |
+|-------|---------|
+| **APA** | (Smith, 2024) |
+| **MLA** | (Smith 2024) |
+| **Chicago** | (Smith 2024, 1) |
+| **IEEE** | [1] |
+
+The style applies to all citations in the document.
+
+### Inserting Citations
+
+<Steps>
+  <Step title="Open picker">
+    Click Cite or type @
+  </Step>
+  <Step title="Search">
+    Find the paper you want
+  </Step>
+  <Step title="Select">
+    Click to insert at cursor
+  </Step>
+</Steps>
+
+## Writing in Markdown
+
+The editor supports full Markdown plus extensions:
+
+### Headings
+
+```markdown
+# Chapter Title
+## Section
+### Subsection
+```
+
+### Formatting
+
+```markdown
+**bold text**
+*italic text*
+`inline code`
+```
+
+### Code Blocks
+
+````markdown
+```python
+def train_model(data):
+    model = Model()
+    model.fit(data)
+    return model
+```
+````
+
+### Math (LaTeX)
+
+Inline: `$E = mc^2$`
+
+Block:
+
+```markdown
+$$
+\sum_{i=1}^{n} x_i = \frac{n(n+1)}{2}
+$$
+```
+
+### Tables
+
+```markdown
+| Model | Accuracy | F1 Score |
+|-------|----------|----------|
+| BERT  | 94.2%    | 0.93     |
+| GPT   | 92.1%    | 0.91     |
+```
+
+## Exporting
+
+### Export Formats
+
+| Format | Best For |
+|--------|----------|
+| **PDF** | Sharing, printing, submission |
+| **DOCX** | Editing in Word, collaboration |
+| **LaTeX** | Overleaf, journal submission |
+| **Markdown** | Backup, version control |
+
+### Export Workflow
+
+<Steps>
+  <Step title="Click Export">
+    Open the export dialog
+  </Step>
+  <Step title="Choose format">
+    Select PDF, DOCX, LaTeX, or Markdown
+  </Step>
+  <Step title="Select citation style">
+    Choose bibliography format
+  </Step>
+  <Step title="Download">
+    File saves to your computer
+  </Step>
+</Steps>
+
+## Tips & Best Practices
+
+<AccordionGroup>
+  <Accordion title="Document Structure">
+    Start with an outline:
+    - Abstract
+    - Introduction
+    - Related Work
+    - Methods
+    - Results
+    - Discussion
+    - Conclusion
+  </Accordion>
+  <Accordion title="Citation Workflow">
+    1. Import all papers first (Library)
+    2. Annotate while reading
+    3. Use citation picker while writing
+    4. Bibliography generates on export
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Exporting" icon="download" href="/features/exporting">
+    Detailed export guide
+  </Card>
+  <Card title="Markdown Guide" icon="text-size" href="/reference/markdown">
+    Full syntax reference
+  </Card>
+</CardGroup>

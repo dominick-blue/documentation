@@ -1,0 +1,156 @@
+---
+title: "Core Concepts"
+description: "Understanding the key ideas behind Project Dune"
+icon: "lightbulb"
+---
+
+## Projects
+
+A **project** is the top-level container for all your research materials. Think of it as a folder that holds everything related to a specific research effort.
+
+```
+Project: "ML in Healthcare Survey"
+├── Library (12 papers)
+├── Notes (8 notes)
+├── Drafts (2 manuscripts)
+└── Code (5 snippets)
+```
+
+<Tip>
+**Best practice:** Keep projects focused. It's better to have separate projects for distinct research efforts than one giant project with everything.
+</Tip>
+
+## The Research Flow
+
+Project Dune is designed around a natural research workflow:
+
+```
+┌─────────┐     ┌─────────┐     ┌─────────┐     ┌─────────┐
+│ COLLECT │ ──→ │  READ   │ ──→ │ CONNECT │ ──→ │  WRITE  │
+│         │     │         │     │         │     │         │
+│ Import  │     │ Annotate│     │ Notes & │     │ Draft & │
+│ papers  │     │ & tag   │     │ links   │     │ cite    │
+└─────────┘     └─────────┘     └─────────┘     └─────────┘
+```
+
+Each stage builds on the previous:
+
+1. **Collect** — Import PDFs into your Library
+2. **Read** — Annotate papers with categorized highlights
+3. **Connect** — Create notes that link to papers and each other
+4. **Write** — Draft manuscripts with inline citations
+
+## Annotations & Categories
+
+When you highlight text in a paper, you assign it a **category**. This structured approach helps you quickly find and filter insights later.
+
+| Category | Use For | Color |
+|----------|---------|-------|
+| **Key Claim** | Main arguments, findings, contributions | Yellow |
+| **Method** | Techniques, approaches, algorithms | Blue |
+| **Critique** | Limitations, weaknesses, counterarguments | Red |
+| **Definition** | Terms, concepts, frameworks | Green |
+| **Question** | Things to follow up, unclear points | Purple |
+
+<Note>
+**Why categorize?** When writing, you can filter annotations by category. Need to write your Methods section? Filter for Method annotations across all papers.
+</Note>
+
+## Bidirectional Linking
+
+Notes in Project Dune support **bidirectional links** — connections that work both ways.
+
+### Creating Links
+
+Use double brackets to link to another note:
+
+```markdown
+This connects to [[Literature Review Notes]]
+```
+
+### Backlinks
+
+When Note A links to Note B, Note B automatically shows a backlink to Note A. This creates a web of connected ideas.
+
+```
+Note: "Attention Mechanisms"
+├── Links to: [[Transformer Architecture]], [[BERT Notes]]
+└── Backlinks from: [[Deep Learning Fundamentals]], [[NLP Survey]]
+```
+
+### Paper References
+
+Use `@` syntax to reference papers:
+
+```markdown
+As discussed in @Smith2024, the approach has limitations.
+```
+
+## Citations
+
+Project Dune uses a simple citation workflow:
+
+<Steps>
+  <Step title="Import papers">
+    Add papers to your Library
+  </Step>
+  <Step title="Open citation picker">
+    Click the Cite button or type `@`
+  </Step>
+  <Step title="Search and select">
+    Find the paper you want to cite
+  </Step>
+  <Step title="Choose style">
+    Select APA, MLA, Chicago, or IEEE
+  </Step>
+  <Step title="Insert">
+    Citation appears in your text
+  </Step>
+</Steps>
+
+Citations are rendered inline and collected into a bibliography on export.
+
+## The Workspace Layout
+
+Project Dune uses a consistent two-panel layout:
+
+```
+┌──────────────────┬─────────────────────────────────────┐
+│                  │                                     │
+│    SIDEBAR       │           MAIN AREA                 │
+│                  │                                     │
+│  - List view     │  - Detail view                      │
+│  - Search        │  - Editor                           │
+│  - Navigation    │  - Viewer                           │
+│                  │                                     │
+└──────────────────┴─────────────────────────────────────┘
+```
+
+- **Library:** Paper grid (main) with PDF viewer (opens on click)
+- **Notes:** Note list (sidebar) with Markdown editor (main)
+- **Drafts:** Manuscript list (sidebar) with editor (main)
+- **Code:** Snippet list (sidebar) with code viewer (main)
+
+## Data & Privacy
+
+<Warning>
+Currently, Project Dune stores all data locally in your browser. Clearing browser data will erase your work. Export regularly as backup.
+</Warning>
+
+| Feature | Status |
+|---------|--------|
+| Local storage | ✅ Your data stays on your machine |
+| No account required | ✅ Use immediately |
+| Cross-device sync | ⏳ Coming soon |
+| Cloud backup | ⏳ Coming soon |
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Library Guide" icon="book" href="/features/library">
+    Master the annotation workflow
+  </Card>
+  <Card title="Notes Guide" icon="note-sticky" href="/features/notes">
+    Build your connected knowledge base
+  </Card>
+</CardGroup>

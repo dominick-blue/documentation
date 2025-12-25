@@ -1,97 +1,73 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Welcome to Project Dune"
+sidebarTitle: "Introduction"
+description: "An Integrated Research Environment for reading, annotating, and writing"
 ---
 
-## Setting up
+## What is Project Dune?
 
-Get your documentation site up and running in minutes.
+Project Dune is an **Integrated Research Environment (IRE)** that brings together the fragmented tools researchers typically use — from reading papers to writing manuscripts.
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
+<Card title="Get Started in 5 Minutes" icon="rocket" href="/quickstart">
+  Follow our quickstart guide to import your first paper and start annotating.
 </Card>
 
-## Make it yours
+## The Research Workflow
 
-Design a docs site that looks great and empowers your users.
+Project Dune is designed around a natural research flow:
 
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+```
+┌─────────┐     ┌─────────┐     ┌─────────┐     ┌─────────┐
+│ COLLECT │ ──→ │  READ   │ ──→ │ CONNECT │ ──→ │  WRITE  │
+│         │     │         │     │         │     │         │
+│ Import  │     │ Annotate│     │ Notes & │     │ Draft & │
+│ papers  │     │ & tag   │     │ links   │     │ cite    │
+└─────────┘     └─────────┘     └─────────┘     └─────────┘
+```
 
-## Create beautiful pages
+Each stage builds on the previous — your annotations flow into notes, and your notes power your writing.
 
-Everything you need to create world-class documentation.
+## Core Features
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
+<CardGroup cols={2}>
+  <Card title="Library" icon="book" href="/features/library">
+    Import PDFs, annotate with categories, and organize your research papers.
   </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
+  <Card title="Notes" icon="note-sticky" href="/features/notes">
+    Create connected notes with bidirectional links to papers and other notes.
   </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
+  <Card title="Drafts" icon="file-pen" href="/features/drafts">
+    Write manuscripts in Markdown with integrated citations from your library.
   </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
+  <Card title="Code Snippets" icon="code" href="/features/code-snippets">
+    Save and organize code from your research, linked to relevant papers.
   </Card>
-</Columns>
+</CardGroup>
 
-## Need inspiration?
+## Where Dune Fits
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+| Research Stage | Traditional Tools | Dune's Role |
+|----------------|-------------------|-------------|
+| **Collect** | Zotero, Mendeley | Import from / sync with these |
+| **Read & Annotate** | PDF Expert, Zotero Reader | Built-in PDF viewer with structured annotations |
+| **Synthesize** | Obsidian, Notion | Connected notes linked to papers |
+| **Draft** | Google Docs, Word | Markdown editor with citation picker |
+| **Final Format** | Overleaf, Word | Export to LaTeX/DOCX |
+
+<Note>
+Project Dune is the **working environment in between** — where you do the thinking and writing before final formatting.
+</Note>
+
+## Quick Links
+
+<CardGroup cols={3}>
+  <Card title="Quickstart" icon="play" href="/quickstart">
+    Get up and running
+  </Card>
+  <Card title="Core Concepts" icon="lightbulb" href="/concepts">
+    Understand how it works
+  </Card>
+  <Card title="Keyboard Shortcuts" icon="keyboard" href="/reference/shortcuts">
+    Speed up your workflow
+  </Card>
+</CardGroup>

@@ -1,0 +1,163 @@
+---
+title: "Code Snippets"
+description: "Save and organize code from your research"
+icon: "code"
+---
+
+Save, organize, and reference code from your research.
+
+## Overview
+
+The Code section lets you:
+
+- Store code snippets from papers you're reading
+- Save your own analysis scripts
+- Link code to relevant papers and notes
+- Copy code quickly when needed
+
+## Creating Snippets
+
+<Steps>
+  <Step title="Navigate to Code">
+    Click **Code** in the sidebar
+  </Step>
+  <Step title="Click New">
+    Open the create dialog
+  </Step>
+  <Step title="Fill in details">
+    - **Title** — Descriptive name
+    - **Language** — Select from dropdown
+    - **Description** — What does this code do?
+    - **Code** — Paste or type your code
+    - **Tags** — Comma-separated labels
+  </Step>
+  <Step title="Create">
+    Save your snippet
+  </Step>
+</Steps>
+
+### Supported Languages
+
+<Columns cols={2}>
+  <div>
+    - Python
+    - JavaScript
+    - TypeScript
+    - R
+    - SQL
+  </div>
+  <div>
+    - Bash
+    - Julia
+    - Rust
+    - Go
+    - Java
+  </div>
+</Columns>
+
+## The Code Interface
+
+```
+┌──────────────────┬─────────────────────────────────────┐
+│                  │  Snippet Title           [Copy]     │
+│   SNIPPET LIST   │  Python  preprocessing  sklearn     │
+│                  ├─────────────────────────────────────┤
+│ [Search...]      │                                     │
+│ [All Languages▼] │  Description of what this code     │
+│                  │  does and when to use it.          │
+│ > Snippet 1      │                                     │
+│   Snippet 2      │  ┌─────────────────────────────┐   │
+│   Snippet 3      │  │ import numpy as np          │   │
+│                  │  │ import pandas as pd         │   │
+│ [+ New]          │  │                             │   │
+│                  │  │ def process(data):          │   │
+│                  │  │     return data.clean()     │   │
+│                  │  └─────────────────────────────┘   │
+└──────────────────┴─────────────────────────────────────┘
+```
+
+## Managing Snippets
+
+### Searching
+
+- Use the search bar to find by title, description, or tag
+- Filter by language using the dropdown
+
+### Editing
+
+1. Select a snippet from the list
+2. Click **Edit** in the toolbar
+3. Modify any field
+4. Click **Save**
+
+### Copying Code
+
+<Tip>
+Click the **Copy** button to copy code to your clipboard instantly. Paste into your editor, notebook, or terminal.
+</Tip>
+
+### Deleting
+
+1. Hover over a snippet in the list
+2. Click the menu icon (⋯)
+3. Select **Delete**
+
+## Linking Snippets
+
+### To Papers
+
+When creating or editing a snippet, link it to relevant papers:
+
+- Shows which paper the code came from
+- Displayed in snippet metadata
+- Helps track provenance
+
+### To Notes
+
+Reference snippets in your notes:
+
+```markdown
+See the preprocessing code in [[code:Data Preprocessing Pipeline]]
+```
+
+## Tags
+
+Use tags to organize snippets:
+
+| Tag | Use For |
+|-----|---------|
+| `preprocessing` | Data cleaning and prep |
+| `model` | Model definitions |
+| `evaluation` | Metrics and testing |
+| `visualization` | Plotting code |
+| `utils` | Helper functions |
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Naming">
+    Use descriptive titles:
+    - ✅ "CNN Image Classification Model"
+    - ❌ "code1"
+  </Accordion>
+  <Accordion title="Documentation">
+    Include in description:
+    - What the code does
+    - Required dependencies
+    - Expected input/output
+  </Accordion>
+  <Accordion title="Linking">
+    Always link to the source paper when saving code from literature.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Exporting" icon="download" href="/features/exporting">
+    Include code in exports
+  </Card>
+  <Card title="Notes" icon="note-sticky" href="/features/notes">
+    Reference code in notes
+  </Card>
+</CardGroup>
